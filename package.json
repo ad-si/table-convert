@@ -1,0 +1,18 @@
+{
+  "name": "html-table2mmd",
+  "version": "0.0.0",
+  "description": "Convert HTML tables to Multimarkdown tables",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {},
+  "keywords": [
+    "html",
+    "multimarkdown",
+    "table"
+  ],
+  "author": "Adrian Sieber",
+  "license": "MIT",
+  "dependencies": {
+    "parse5": "^1.5.0"
+  }
+}
