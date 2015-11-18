@@ -4,8 +4,8 @@
 
 const fs = require('fs')
 const path = require('path')
-const htmlTable2mmd = require('./index.js')
+const tableConvert = require('./index.js')
 
 let fileContent = fs.readFileSync(path.resolve(process.argv[2]))
 
-console.log(htmlTable2mmd(fileContent))
+console.log(tableConvert(fileContent))

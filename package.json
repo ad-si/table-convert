@@ -1,5 +1,5 @@
 {
-  "name": "html-table2mmd",
+  "name": "table-convert",
   "version": "0.0.0",
   "description": "Convert HTML tables to Multimarkdown tables",
   "main": "index.js",
