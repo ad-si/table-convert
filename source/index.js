@@ -25,7 +25,7 @@ module.exports = function (html, options) {
 	let barSpacePattern = '^(([^\\S\\n]|\\|)*\\|([^\\S\\n]|\\|)*)$'
 
 	if (options.format === 'markdown')
-		return toMarkdown(document)
+		return toMarkdown(document, options)
 			.replace(new RegExp(barSpacePattern, 'm'), (match) =>
 				match.replace(/\s+/g, '---') + '|'
 			)
@@ -33,9 +33,9 @@ module.exports = function (html, options) {
 			.replace(/[^\x00-\x7F]/g, '') // Remove non-Ascii characters
 
 	else if (options.format === 'latex')
-		return toLatex(document)
+		return toLatex(document, options)
+			.replace(/\xA0/g, '') // Remove non-braking spaces
 
 	else
 		throw new Error(options.format + ' is no supported output format!')
-
 }

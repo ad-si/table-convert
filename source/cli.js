@@ -14,7 +14,10 @@ if (commandName === 'html-table2mmd')
 	console.log(tableConvert(fileContent, {format: 'markdown'}))
 
 else if (commandName === 'html-table2latex')
-	console.log(tableConvert(fileContent, {format: 'latex'}))
+	console.log(tableConvert(fileContent, {
+		format: 'latex', // or markdown
+		type: 'standalone' // standalone or fragment
+	}))
 
 else
 	throw new Error(args[1] + ' is no available command name.')
