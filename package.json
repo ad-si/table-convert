@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "description": "Convert HTML tables to Multimarkdown tables",
   "main": "index.js",
-  "bin": "cli.js",
+  "bin": {
+    "html-table2mmd": "source/cli.js",
+    "html-table2latex": "source/cli.js"
+  },
   "scripts": {},
   "keywords": [
     "html",
