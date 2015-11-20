@@ -8,7 +8,7 @@ const tableConvert = require('../source/index.js')
 
 
 {
-	process.stdout.write('It converts HTML to Markdown')
+	process.stdout.write('It converts a HTML table to a Multimarkdown table')
 
 	let actual = tableConvert(
 		fs.readFileSync(path.join(__dirname, './test.html')),
@@ -24,12 +24,12 @@ const tableConvert = require('../source/index.js')
 
 {
 	let expectedLatex = fs.readFileSync(
-		path.join(__dirname, './test.tex'),
+		path.join(__dirname, './table.tex'),
 		'utf8'
 	)
 
 	{
-		process.stdout.write('It converts HTML to Latex')
+		process.stdout.write('It converts a HTML table to a Latex table')
 
 		let actual = tableConvert(
 			fs.readFileSync(path.join(__dirname, './test.html'))
@@ -44,6 +44,8 @@ const tableConvert = require('../source/index.js')
 		let actual = child_process.execFileSync(
 			'source/cli.js',
 			[
+				'--to',
+				'latex',
 				'test/test.html'
 			],
 			{
@@ -54,4 +56,30 @@ const tableConvert = require('../source/index.js')
 		expect(actual.toString(), 'to be', expectedLatex)
 		console.log(' ✔')
 	}
+}
+
+
+{
+	process.stdout.write('Command line interface accepts type parameter')
+
+	let expectedLatexFragment = fs.readFileSync(
+		path.join(__dirname, './table-fragment.tex'),
+		'utf8'
+	)
+	let actual = child_process.execFileSync(
+		'source/cli.js',
+		[
+			'--to',
+			'latex',
+			'--type',
+			'fragment',
+			'test/test.html'
+		],
+		{
+			cwd: path.join(__dirname, '../')
+		}
+	)
+
+	expect(actual.toString(), 'to be', expectedLatexFragment)
+	console.log(' ✔')
 }
