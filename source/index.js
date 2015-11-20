@@ -23,11 +23,6 @@ module.exports = function (html, options) {
 
 	let document = parser.parse(html)
 
-	let tree = require('util').inspect(
-		document,
-		{depth: null, colors: true}
-	)
-
 	let test = {}
 
 	if (options.format === 'markdown')
