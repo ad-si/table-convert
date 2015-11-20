@@ -77,11 +77,16 @@ module.exports = function walkTree (node, _options) {
 					})
 					.join('\n')
 
-		if (options.type !== 'fragment')
-			output = getTabularyTemplate(output, maxNumberOfCells)
+		if (options.type === 'fragment')
+			return output
+
+		output = getTabularyTemplate(output, maxNumberOfCells)
 
 		if (options.type === 'standalone')
-			output = getStandaloneTemplate(output)
+			return getStandaloneTemplate(output)
+
+		else if (options.type && options.type !== 'table')
+			throw new Error(options.type + ' is no valid output type!')
 
 		return output
 	}

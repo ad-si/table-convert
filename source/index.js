@@ -8,7 +8,7 @@ const Parser = parse5.Parser
 
 const defaults = {
 	format: 'latex', // or markdown
-	type: 'standalone' // standalone or fragment
+	type: 'table' // standalone or fragment
 }
 
 
