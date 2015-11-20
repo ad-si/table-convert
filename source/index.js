@@ -6,7 +6,7 @@ const toLatex = require('./to-latex.js')
 
 const Parser = parse5.Parser
 
-let defaults = {
+const defaults = {
 	format: 'latex', // or markdown
 	type: 'standalone' // standalone or fragment
 }
@@ -14,7 +14,7 @@ let defaults = {
 
 module.exports = function (html, options) {
 
-	options = Object.assign(defaults, options)
+	options = Object.assign(Object.assign({}, defaults), options)
 
 	const parser = new Parser()
 
