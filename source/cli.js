@@ -4,18 +4,29 @@
 
 const fs = require('fs')
 const path = require('path')
+const yargs = require('yargs')
 const tableConvert = require('./index.js')
 
-let args = process.argv
-let commandName = path.basename(args[1])
-let fileContent = fs.readFileSync(path.resolve(args[2]))
+let args = yargs
+	.usage('Usage: $0 <html-file>')
+	//.demand(1)
+	.argv
+
+let commandName = path.basename(args.$0)
+let relativeFilePath = args._.pop()
+let fileContent = fs.readFileSync(path.resolve(relativeFilePath))
 
 
-if (commandName === 'html-table2mmd')
-	process.stdout.write(tableConvert(fileContent, {format: 'markdown'}))
-
-else if (commandName === 'html-table2latex' || commandName === 'cli.js')
-	process.stdout.write(tableConvert(fileContent))
-
+if (commandName === 'html-table2mmd' || /md|markdown/.test(args.to)) {
+	process.stdout.write(tableConvert(fileContent, {
+		format: 'markdown'
+	}))
+}
+else if (commandName === 'html-table2latex' || /(la)?tex/.test(args.to)) {
+	process.stdout.write(tableConvert(fileContent, {
+		format: 'latex',
+		type: args.type
+	}))
+}
 else
-	throw new Error(args[1] + ' is no available command name.')
+	throw new Error(args.$0 + ' is no available command name.')
