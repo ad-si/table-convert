@@ -1,0 +1,35 @@
+| 2016 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Income | Month | January | February | March | April | May | June | July | August | September | October | November | December |  | Total for Year |  |  |  |
+|  | Paycheck 1 | 1300.45 |  |  |  |  |  |  |  |  |  |  |  |  | 1300.45 |  |  |  |
+|  | Paycheck 2 | 11722.32 |  |  |  |  |  |  |  |  |  |  |  |  | 11722.32 |  |  |  |
+|  | Interest |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Other Income |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Total Income | 13022.77 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  | 13022.77 |  |  |  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---||
+| Expenses | Month | January | February | March | April | May | June | July | August | September | October | November | December |  | Total for Year |  |  |  |
+|  | Rent/Mortgage | 354.78 |  |  |  |  |  |  |  |  |  |  |  |  | 354.78 |  |  |  |
+|  | Electric | 89.34 |  |  |  |  |  |  |  |  |  |  |  |  | 89.34 |  |  |  |
+|  | Natural Gas |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Water |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Sewer |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Waste Disposal |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Car Payment |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Car Repairs |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Car Insurance |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Gas |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Phone |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Cell Phone |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Internet |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Clothes |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Entertainment |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | School Expenses |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Bank Charges |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Misc. |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |  |  |  |
+|  | Total Expenses | 444.12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  | 444.12 |  |  |  |
+
+| Net Income | Month | January | February | March | April | May | June | July | August | September | October | November | December |  | Total for Year |  |  |  |
+|  | Total Income | 13022.77 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  | 13022.77 |  |  |  |
+|  | Total Expenses | 444.12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  | 444.12 |  |  |  |
+|  | Total Net Income | 12578.65 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  | 12578.65 |  |  |  |
+
+|  | Cumulative Net Income | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 | 12578.65 |  | 12578.65 |  |  |  |

@@ -7,7 +7,9 @@
     "html-table2mmd": "source/cli.js",
     "html-table2latex": "source/cli.js"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "node test/index.js"
+  },
   "keywords": [
     "html",
     "multimarkdown",
@@ -17,5 +19,11 @@
   "license": "MIT",
   "dependencies": {
     "parse5": "^1.5.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "unexpected": "^10.2.0"
   }
 }
