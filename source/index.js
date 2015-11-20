@@ -6,8 +6,15 @@ const toLatex = require('./to-latex.js')
 
 const Parser = parse5.Parser
 
+let defaults = {
+	format: 'latex', // or markdown
+	type: 'standalone' // standalone or fragment
+}
+
 
 module.exports = function (html, options) {
+
+	options = Object.assign(defaults, options)
 
 	const parser = new Parser()
 
@@ -22,15 +29,9 @@ module.exports = function (html, options) {
 	)
 
 	let test = {}
-	let barSpacePattern = '^(([^\\S\\n]|\\|)*\\|([^\\S\\n]|\\|)*)$'
 
 	if (options.format === 'markdown')
 		return toMarkdown(document, options)
-			.replace(new RegExp(barSpacePattern, 'm'), (match) =>
-				match.replace(/\s+/g, '---') + '|'
-			)
-			.replace(new RegExp(barSpacePattern, 'gm'), '')
-			.replace(/[^\x00-\x7F]/g, '') // Remove non-Ascii characters
 
 	else if (options.format === 'latex')
 		return toLatex(document, options)
