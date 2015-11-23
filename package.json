@@ -1,6 +1,6 @@
 {
   "name": "table-convert",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert HTML tables to Multimarkdown tables",
   "main": "index.js",
   "bin": {
