@@ -3,7 +3,9 @@
   "version": "0.2.0",
   "description": "Convert HTML tables to Multimarkdown or LaTeX tables",
   "main": "source/index.js",
-  "bin": "source/cli.js",
+  "bin": {
+    "table-convert": "source/cli.js"
+  },
   "type": "module",
   "files": [
     "source/cli.js",
