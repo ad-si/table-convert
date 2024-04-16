@@ -1,12 +1,20 @@
 # Table Convert
 
-Convert html-tables to Multimarkdown and Latex.
+Convert HTML tables to Multimarkdown or LaTeX.
 
 
 ## Usage
 
-Convert HTML-table to Multimarkdown
+Print a Multimarkdown table to stdout:
 
-```shell
+```sh
 table-convert table.html
+# or
+table-convert --to markdown table.html
+```
+
+Print a LaTeX table to stdout:
+
+```sh
+table-convert --to latex table.html
 ```

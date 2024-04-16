@@ -1,14 +1,17 @@
 {
   "name": "table-convert",
   "version": "0.1.0",
-  "description": "Convert HTML tables to Multimarkdown tables",
-  "main": "index.js",
-  "bin": {
-    "html-table2mmd": "source/cli.js",
-    "html-table2latex": "source/cli.js"
-  },
+  "description": "Convert HTML tables to Multimarkdown or LaTeX tables",
+  "main": "source/index.js",
+  "bin": "source/cli.js",
+  "type": "module",
+  "files": [
+    "source/cli.js",
+    "source/index.js"
+  ],
   "scripts": {
-    "test": "node test/index.js"
+    "prepublishOnly": "tsc",
+    "test": "bun run tests/index.ts"
   },
   "keywords": [
     "html",
@@ -18,13 +21,17 @@
   "author": "Adrian Sieber",
   "license": "MIT",
   "dependencies": {
-    "parse5": "^1.5.0",
-    "yargs": "^3.30.0"
+    "parse5": "^7.1.2",
+    "yargs": "^17.7.2"
   },
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-    "unexpected": "^10.2.0"
+    "@types/node": "^20.12.7",
+    "@types/temp": "^0.9.4",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.4.5",
+    "unexpected": "^13.2.1"
   }
 }

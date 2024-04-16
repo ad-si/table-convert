@@ -1,3 +1,5 @@
+*.js
+/node_modules
 /test/*.aux
 /test/*.log
 /test/*.synctex.gz
