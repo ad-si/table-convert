@@ -1,0 +1,4 @@
+tests/*.fods linguist-generated
+tests/*.html linguist-generated
+tests/*.pdf linguist-generated
+tests/*.tex linguist-generated
