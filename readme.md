@@ -1,6 +1,13 @@
 # Table Convert
 
-Convert HTML tables to Multimarkdown or LaTeX.
+CLI tool to convert HTML tables to Multimarkdown or LaTeX.
+
+
+## Installation
+
+```sh
+npm install --global table-convert
+```
 
 
 ## Usage
