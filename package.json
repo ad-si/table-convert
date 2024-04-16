@@ -18,7 +18,13 @@
   "keywords": [
     "html",
     "multimarkdown",
-    "table"
+    "table",
+    "cli",
+    "latex",
+    "markdown",
+    "md",
+    "tex",
+    "conversion"
   ],
   "author": "Adrian Sieber",
   "license": "MIT",
